@@ -27,7 +27,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"exec insertvechiue '{a.type}',");
+                con.Execute($"exec insertvechiuetype'{a.type}'");
 
                 con.Close();
 
@@ -51,7 +51,8 @@ namespace DataAccessLibrary.Repository
 
                 var connection = new SqlConnection(connectionString);
                 connection.Open();
-                constrain = connection.Query<DropdownModel>("exec selectvechiueid 3", connectionString).ToList();
+              
+                constrain = connection.Query<DropdownModel>("exec selectvechiuetype ").ToList();
                 connection.Close();
 
                 return constrain;
@@ -68,12 +69,23 @@ namespace DataAccessLibrary.Repository
         }
         public DropdownModel SelectSP(string type)
         {
-            var connection = new SqlConnection(connectionString);
-            connection.Open();
-            var constrain = connection.QueryFirst<DropdownModel>($"exec DropdownModel {type} ", connectionString);
-            connection.Close();
+            try
+            {
+                var connection = new SqlConnection(connectionString);
+                connection.Open();
+                var constrain = connection.QueryFirst<DropdownModel>($"exec vechiuetype {type} ");
+                connection.Close();
 
-            return constrain;
+                return constrain;
+            }
+            catch (SqlException e)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
         }
 
@@ -86,7 +98,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"updatevechiuetype 2,'car'");
+                con.Execute($"exec updatevechiuetype");
 
 
 
@@ -113,7 +125,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"exec deletevechiuetype 2");
+                con.Execute($"exec deletevechiuetype");
 
 
                 con.Close();

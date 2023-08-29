@@ -7,6 +7,7 @@ using DataAccessLibrary.Model;
 
 using Dapper;
 using System.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataAccessLibrary.Model
 {
@@ -16,13 +17,18 @@ namespace DataAccessLibrary.Model
         {
             typeValues = new List<DropdownModel>();
         }
+       
         public int id { get; set; }
 
-        
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Number { get; set; }
+        [Required]
         public string Insurancenumber { get; set; }
+        [Required]
         public string type { get; set; }
+        [Required]
         public string Owner { get; set; }
         public List<DropdownModel> typeValues { get; set; }
     }

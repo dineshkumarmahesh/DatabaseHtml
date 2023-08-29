@@ -84,7 +84,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"exec updatevechiue '{u.id}','{u.Name}','{u.Number}','{u.Insurancenumber}',{u.type}','{u.Owner}'");               
+                con.Execute($"exec updatevechiue '{u.id}','{u.Name}',{u.Number},{u.Insurancenumber},'{u.type}','{u.Owner}'");               
 
                 con.Close();
             }
@@ -109,7 +109,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"exec deletevechiue {id}");
+                con.Execute($"exec deletevechiue{id}");
 
 
                 con.Close();

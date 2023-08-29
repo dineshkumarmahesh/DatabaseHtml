@@ -9,6 +9,7 @@ using DataAccessLibrary.Repository;
 using DataAccessLibrary.Model;
 using Dapper;
 using System.Data.SqlClient;
+using DatabaseHtml.Models;
 
 namespace DatabaseHtml.Controllers
 {
@@ -66,9 +67,10 @@ namespace DatabaseHtml.Controllers
                 }
                    
            }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                
+                return View("Error", new ErrorViewModel { CustomMessage = "Error in Product Edit feature", ActualMessage = ex.Message });
             }
         }
 
@@ -91,9 +93,9 @@ namespace DatabaseHtml.Controllers
                 obj.updateSP(u);
                 return RedirectToAction(nameof(List));
             }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                return View("Error", new ErrorViewModel { CustomMessage = "Error in Product Edit feature", ActualMessage = ex.Message });
             }
         }
 
@@ -114,9 +116,9 @@ namespace DatabaseHtml.Controllers
                 obj.deleteSP(id);
                 return RedirectToAction(nameof(List));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return View("Error", new ErrorViewModel { CustomMessage = "Error in Product Edit feature", ActualMessage = ex.Message });
             }
         }
     }
