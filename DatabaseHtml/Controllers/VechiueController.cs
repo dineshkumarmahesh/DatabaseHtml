@@ -109,7 +109,7 @@ namespace DatabaseHtml.Controllers
         // POST: VechiueController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, VechiueModel u)
+        public ActionResult Remove(int id)
         {
             try
             {

@@ -109,7 +109,7 @@ namespace DataAccessLibrary.Repository
                 SqlConnection con = new SqlConnection(connectionString);
 
                 con.Open();
-                con.Execute($"exec deletevechiue{id}");
+                con.Execute($"exec deletevechiue {id}");
 
 
                 con.Close();
