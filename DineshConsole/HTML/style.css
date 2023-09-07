@@ -1,0 +1,19 @@
+h1 {
+    color: burlywood;
+    font-size: 30px;
+  }
+  
+  p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 100px;
+  }
+
+  body
+  {
+    text-align:center ;
+
+    background-image: url('html1.jpg');
+  }
+
+
+  

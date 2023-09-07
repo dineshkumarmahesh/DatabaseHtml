@@ -1,0 +1,22 @@
+
+.radio{
+    color:gold;
+    background-color:black;
+cursor: pointer;
+height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 10;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    body{
+color: green;
+font-size: medium;
+text-align:center;
+background-color: aquamarine;
+
+
+    }

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="HTML\.vscode\launch.json" />
+    <Content Include="HTML\radiobutton\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="HTML\radiobutton\.vs\slnx.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HTML\radiobutton\.vs\radiobutton\v16\" />
+  </ItemGroup>
+
+</Project>

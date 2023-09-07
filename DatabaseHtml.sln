@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseHtml", "DatabaseHtml\DatabaseHtml.csproj", "{B3BE8DF5-01F1-44D1-BDA6-51B7CAC73041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{543AE497-2923-46F5-B487-5BFDC2DD1707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{543AE497-2923-46F5-B487-5BFDC2DD1707}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFwebLibrary", "EFwebLibrary\EFwebLibrary.csproj", "{60C0937F-0816-4D89-98CB-E210D790F2CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{5BDBC0F9-E43E-4B3B-9312-0B3BE77578D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{543AE497-2923-46F5-B487-5BFDC2DD1707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{543AE497-2923-46F5-B487-5BFDC2DD1707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{543AE497-2923-46F5-B487-5BFDC2DD1707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C0937F-0816-4D89-98CB-E210D790F2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C0937F-0816-4D89-98CB-E210D790F2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C0937F-0816-4D89-98CB-E210D790F2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C0937F-0816-4D89-98CB-E210D790F2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDBC0F9-E43E-4B3B-9312-0B3BE77578D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDBC0F9-E43E-4B3B-9312-0B3BE77578D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDBC0F9-E43E-4B3B-9312-0B3BE77578D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDBC0F9-E43E-4B3B-9312-0B3BE77578D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
